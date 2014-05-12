@@ -26,14 +26,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    [self sliderChanged:_slider];
 }
 
 - (IBAction)sliderChanged:(id)sender
 {
     UISlider *slider = (UISlider *)sender;
-    float val = slider.value;
-    self.labelSlider.text = [NSString stringWithFormat:@"%f",val]		;
+    int val = slider.value;
+    self.labelSlider.text = [NSString stringWithFormat:@"%d",val]		;
 }
 
 - (void)didReceiveMemoryWarning
