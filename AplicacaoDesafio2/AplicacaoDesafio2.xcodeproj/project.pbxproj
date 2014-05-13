@@ -23,6 +23,7 @@
 		9F1E08E8192159190079E51E /* AplicacaoDesafio2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1E08E7192159190079E51E /* AplicacaoDesafio2Tests.m */; };
 		9F1E08F419215A170079E51E /* view.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1E08F219215A170079E51E /* view.m */; };
 		9F1E08F519215A170079E51E /* view.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1E08F319215A170079E51E /* view.xib */; };
+		9F4868851922A92B0029FEF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4868841922A92B0029FEF7 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		9F1E08F119215A170079E51E /* view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = view.h; sourceTree = "<group>"; };
 		9F1E08F219215A170079E51E /* view.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = view.m; sourceTree = "<group>"; };
 		9F1E08F319215A170079E51E /* view.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = view.xib; sourceTree = "<group>"; };
+		9F4868841922A92B0029FEF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				9F1E08CB192159190079E51E /* AppDelegate.h */,
 				9F1E08CC192159190079E51E /* AppDelegate.m */,
+				9F4868841922A92B0029FEF7 /* Images.xcassets */,
 				9F1E08C3192159190079E51E /* Supporting Files */,
 			);
 			path = AplicacaoDesafio2;
@@ -234,6 +237,7 @@
 				9F1E08C7192159190079E51E /* InfoPlist.strings in Resources */,
 				9F1E08CF192159190079E51E /* Default.png in Resources */,
 				9F1E08D1192159190079E51E /* Default@2x.png in Resources */,
+				9F4868851922A92B0029FEF7 /* Images.xcassets in Resources */,
 				9F1E08D3192159190079E51E /* Default-568h@2x.png in Resources */,
 				9F1E08F519215A170079E51E /* view.xib in Resources */,
 			);
@@ -375,6 +379,8 @@
 		9F1E08EC192159190079E51E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AplicacaoDesafio2/AplicacaoDesafio2-Prefix.pch";
 				INFOPLIST_FILE = "AplicacaoDesafio2/AplicacaoDesafio2-Info.plist";
@@ -387,6 +393,8 @@
 		9F1E08ED192159190079E51E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AplicacaoDesafio2/AplicacaoDesafio2-Prefix.pch";
 				INFOPLIST_FILE = "AplicacaoDesafio2/AplicacaoDesafio2-Info.plist";
@@ -449,6 +457,7 @@
 				9F1E08ED192159190079E51E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F1E08EE192159190079E51E /* Build configuration list for PBXNativeTarget "AplicacaoDesafio2Tests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +466,7 @@
 				9F1E08F0192159190079E51E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

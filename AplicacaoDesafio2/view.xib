@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="view">
             <connections>
+                <outlet property="fone" destination="7" id="rQn-dA-Ddp"/>
                 <outlet property="labelSlider" destination="45" id="74"/>
                 <outlet property="slider" destination="20" id="73"/>
                 <outlet property="view" destination="1" id="3"/>
@@ -70,6 +71,9 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="atualizaHistorico:" destination="-1" eventType="touchUpInside" id="RKO-CG-zHP"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

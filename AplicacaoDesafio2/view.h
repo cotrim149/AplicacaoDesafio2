@@ -11,5 +11,8 @@
 @interface view : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *labelSlider;
 @property (weak, nonatomic) IBOutlet UISlider *slider;
+@property (weak, nonatomic) IBOutlet UITextField *fone;
+
+-(IBAction)atualizaHistorico:(id)fone andInfoSlider:(id) slider;
 
 @end

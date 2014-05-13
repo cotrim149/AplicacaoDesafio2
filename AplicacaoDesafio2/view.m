@@ -28,6 +28,7 @@
     [super viewDidLoad];
     
     [self sliderChanged:_slider];
+    [self atualizaHistorico:_fone andInfoSlider:_slider];
 }
 
 - (IBAction)sliderChanged:(id)sender
@@ -35,6 +36,42 @@
     UISlider *slider = (UISlider *)sender;
     int val = slider.value;
     self.labelSlider.text = [NSString stringWithFormat:@"%d",val]		;
+}
+
+int count = 0;
+-(IBAction)atualizaHistorico:(id)fone andInfoSlider:(id) slider{
+    
+    UITextField *textFieldfone= (UITextField *) fone;
+    UISlider *sliderIdade = (UISlider *) slider;
+    
+    NSLog(@"%@",fone);
+    
+    NSDate *now = [NSDate date];
+    
+    NSMutableString *dir = [[NSMutableString alloc] init];
+    [dir appendString:@"/Users/cotrim/Desktop/historico.plist"];
+    
+    NSLog(@"%@",dir);
+    
+    NSMutableDictionary *historico;
+    
+    if (count == 0) {
+        historico = [[NSMutableDictionary alloc] init];
+        
+        [historico setValue:now forKey:[NSString stringWithFormat:@"%d",count]];
+        [historico writeToFile:dir atomically:YES];
+    }else{
+        historico = [[NSMutableDictionary alloc] initWithContentsOfFile:dir];
+        
+        [historico setValue:now forKey:[NSString stringWithFormat:@"%d",count]];
+        [historico writeToFile:dir atomically:YES];
+    }
+    
+    
+    count++;
+    
+    NSLog(@"%@",historico);
+    
 }
 
 - (void)didReceiveMemoryWarning
