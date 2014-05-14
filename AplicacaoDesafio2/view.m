@@ -27,8 +27,6 @@
 {
     [super viewDidLoad];
     
-    [self sliderChanged:_slider];
-    [self atualizaHistorico:_fone andInfoSlider:_slider];
 }
 
 - (IBAction)sliderChanged:(id)sender
@@ -39,13 +37,11 @@
 }
 
 int count = 0;
--(IBAction)atualizaHistorico:(id)fone andInfoSlider:(id) slider{
+-(IBAction)atualizaHistorico:(id)foneField{
     
-    UITextField *textFieldfone= (UITextField *) fone;
-    UISlider *sliderIdade = (UISlider *) slider;
-    
-    NSLog(@"%@",fone);
-    
+//    UITextField *textFieldfone= (UITextField *) fone;
+//    UISlider *sliderIdade = (UISlider *) slider;
+//        
     NSDate *now = [NSDate date];
     
     NSMutableString *dir = [[NSMutableString alloc] init];
@@ -72,6 +68,11 @@ int count = 0;
     
     NSLog(@"%@",historico);
     
+}
+
+
+- (BOOL) shouldAutorotate{
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
